@@ -5,7 +5,8 @@
             "app/functions/pages.php",
             "app/functions/validate.php",
             "app/functions/flash.php",
-            "app/functions/mail.php"
+            "app/functions/mail.php",
+            "app/functions/database.php"
         ]
     },
     "require": {

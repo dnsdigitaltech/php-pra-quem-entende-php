@@ -1,5 +1,6 @@
 <h2>Cadastrar Usuário</h2>
-<form>
+<?=get('message')?>
+<form action="/pages/forms/create_user.php" method="post">
     <div class="mb-3">
         <label for="name" class="form-label">Nome</label>
         <input
