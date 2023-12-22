@@ -12,3 +12,13 @@ function filter_string_polyfill(string $string): string
     $str = preg_replace('/\x00|<[^>]*>?/', '', $string);
     return str_replace(["'", '"'], ['&#39;', '&#34;'], $str);
 }
+
+//GET or POST
+function request(){
+    $request = $_SERVER['REQUEST_METHOD'];
+    if($request == 'POST'){
+        return $_POST;
+    }else{
+        return $_GET;
+    }
+}
