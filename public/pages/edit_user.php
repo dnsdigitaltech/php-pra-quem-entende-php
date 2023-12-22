@@ -38,16 +38,6 @@
             placeholder="E-mail"
         />
     </div>
-    <div class="mb-3">
-        <label for="password" class="form-label">Senha</label>
-        <input
-            type="text"
-            class="form-control"
-            name="password"
-            id="password"
-            placeholder="Senha"
-        />
-    </div>
     <button
         type="submit"
         class="btn btn-primary"
