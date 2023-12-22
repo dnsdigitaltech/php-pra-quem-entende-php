@@ -1,4 +1,5 @@
 <?php
+session_start();
 ini_set('display_errors','on');
 
 function dd($dump){
@@ -21,4 +22,13 @@ function request(){
     }else{
         return $_GET;
     }
+}
+
+//Redirect
+function redirect($target){
+    return header("location:/?page={$target}");
+}
+
+function redirectToHome(){
+    return header("location:/");
 }

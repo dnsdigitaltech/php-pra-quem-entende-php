@@ -1,7 +1,7 @@
 <h2>Contato</h2>
 <?=get('message')?>
 <div class="container">
-    <form action="/pages/forms/contato.php" method="get">
+    <form action="/pages/forms/contato.php" method="post">
         <div class="mb-3">
             <label for="name" class="form-label">Nome</label>
             <input
