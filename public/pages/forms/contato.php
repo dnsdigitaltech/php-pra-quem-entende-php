@@ -1,10 +1,9 @@
 <?php
+require "../../../bootstrap.php";
 
-// $validate = validade([
+$validate = validate([
+    'name' => 's',
+    'email' => 'e'
+]);
 
-// ]);
-
-$name = $_POST['name'];
-$email = $_POST['email'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
+dd($validate);
