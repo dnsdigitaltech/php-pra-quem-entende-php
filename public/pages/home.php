@@ -1,6 +1,6 @@
 <a href="?page=create_user" class="btn btn-success">Cadastrar user</a>
 <h2>Página inicial</h2>
-
+<?=get('message')?>
 <div
     class="table-responsive"
 >
@@ -29,7 +29,7 @@
                 <td><?=$user->name?> <?=$user->lastname?></td>
                 <td><?=$user->email?></td>
                 <td><a href="?page=edit_user&id=<?=$user->id?>" class="btn btn-info">Editar</a></td>
-                <td><a href="" class="btn btn-danger">Deletar</a></td>
+                <td><a href="?page=delete_user&id=<?=$user->id?>" class="btn btn-danger">Deletar</a></td>
             </tr>
             <?php endforeach;?>
         </tbody>
