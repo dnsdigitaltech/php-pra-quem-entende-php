@@ -1,5 +1,5 @@
 <h2>Contato</h2>
-
+<?=get('message')?>
 <div class="container">
     <form action="/pages/forms/contato.php" method="get">
         <div class="mb-3">
