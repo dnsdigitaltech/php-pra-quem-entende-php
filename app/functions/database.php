@@ -19,12 +19,26 @@ function create($table, $fields){
     return $insert->execute($fields);
 }
 
-function update(){
-
+function all($table){
+    $pdo = connect();
+    $sql = "SELECT * FROM {$table}";
+    $list = $pdo->query(($sql));
+    $list->execute();
+    return $list->fetchAll();
 }
 
-function find(){
+function update(){
+    
+}
 
+function find($table,$field,$value){
+    $pdo = connect();
+    $value = filter_var($value, FILTER_SANITIZE_NUMBER_INT);
+    $sql = "SELECT * FROM {$table} WHERE {$field} = :{$field}";
+    $find = $pdo->prepare($sql);
+    $find->bindValue($field,$value);
+    $find->execute();
+    return $find->fetch();
 }
 
 function delete(){
